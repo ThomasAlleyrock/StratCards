@@ -1,0 +1,22 @@
+[
+    {
+      "name": "Transhuman",
+      "price": "1 CP",
+      "text": "This is a stratagem"
+    },
+    {
+      "name": "Something",
+      "price": "2 CP",
+      "text": "This is a stratagem"
+    },
+    {
+      "name": "Stuff",
+      "price": "3 CP",
+      "text": "This is a stratagem"
+    },
+    {
+      "name": "Things",
+      "price": "4 CP",
+      "text": "This is a stratagem"
+    }
+  ]
