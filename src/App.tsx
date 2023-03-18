@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import { Container } from "react-bootstrap"
-import { Home } from "./pages/home"
+import { Home } from "./pages/Home"
 import { Orks } from "./pages/Orks"
 import { DeathGuard } from "./pages/DeathGuard"
 import { Navbar } from "./components/Navbar"
