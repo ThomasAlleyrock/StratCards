@@ -1,9 +1,33 @@
 [
     {
-      "name": "Transhuman",
+      "name": "Strat Name",
       "price": "1 CP",
-      "text": "This is a stratagem",
-      "phase": "Command"
+      "phase": "Command",
+      "effectTime": "From until",
+      "targetOwn": "<Plague Company> Character",
+      "targetEnemy": "Enemy unit in combat range of targetOwn",
+      "textShort": "This strat does this",
+      "textLong": "This strat does this in a cool way"
+    },
+    {
+      "name": "Strat Name",
+      "price": "1 CP",
+      "phase": "Command",
+      "effectTime": "From until",
+      "targetOwn": "<Plague Company> Character",
+      "targetEnemy": "Enemy unit in combat range of targetOwn",
+      "textShort": "This strat does this",
+      "textLong": "This strat does this in a cool way"
+    },
+    {
+      "name": "Strat Name",
+      "price": "1 CP",
+      "phase": "Command",
+      "effectTime": "From until",
+      "targetOwn": "<Plague Company> Character",
+      "targetEnemy": "Enemy unit in combat range of targetOwn",
+      "textShort": "This strat does this",
+      "textLong": "This strat does this in a cool way"
     },
     {
       "name": "Strat Name",
