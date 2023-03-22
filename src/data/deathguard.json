@@ -1,8 +1,20 @@
 [
     {
+      "name": "TRENCH FIGHTERS",
+      "price": "1 CP",
+      "phase": "Fight",
+      "category": "Battle Tactic",
+      "effectTime": "End of the phase",
+      "targetOwn": "DG Plague Marines",
+      "targetEnemy": " - ",
+      "textShort": "+1 attacks with Plague Knives",
+      "textLong": "Use this Stratagem in the Fight phase, when a DEATH GUARD PLAGUE MARINES unit from your army is selected to fight. Until the end of the phase, each time a model in that unit fights, if it is equipped with any plague knives, it makes 1 additional attack with one of its plague knives."
+    },
+    {
       "name": "Strat Name",
       "price": "1 CP",
       "phase": "Command",
+      "category": "Battle Tactic",
       "effectTime": "From until",
       "targetOwn": "<Plague Company> Character",
       "targetEnemy": "Enemy unit in combat range of targetOwn",
@@ -13,6 +25,7 @@
       "name": "Strat Name",
       "price": "1 CP",
       "phase": "Command",
+      "category": "Battle Tactic",
       "effectTime": "From until",
       "targetOwn": "<Plague Company> Character",
       "targetEnemy": "Enemy unit in combat range of targetOwn",
@@ -23,16 +36,7 @@
       "name": "Strat Name",
       "price": "1 CP",
       "phase": "Command",
-      "effectTime": "From until",
-      "targetOwn": "<Plague Company> Character",
-      "targetEnemy": "Enemy unit in combat range of targetOwn",
-      "textShort": "This strat does this",
-      "textLong": "This strat does this in a cool way"
-    },
-    {
-      "name": "Strat Name",
-      "price": "1 CP",
-      "phase": "Command",
+      "category": "Battle Tactic",
       "effectTime": "From until",
       "targetOwn": "<Plague Company> Character",
       "targetEnemy": "Enemy unit in combat range of targetOwn",
