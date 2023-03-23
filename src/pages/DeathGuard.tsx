@@ -1,4 +1,4 @@
-import { Card, Col, Row } from "react-bootstrap"
+import { Col, Row } from "react-bootstrap"
 import { StratItem } from "../components/StratItem"
 import DGstrats from "../data/deathguard.json"
 
