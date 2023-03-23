@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Button, Card } from "react-bootstrap"
 
 type StratItemProps = {
@@ -15,8 +16,17 @@ type StratItemProps = {
 export function StratItem({name, price, phase, category, effectTime, targetOwn, targetEnemy, textShort, textLong}: StratItemProps) {
 
     const shortOrLong = false
+    const [showLongText, setShowLongText] = useState(false);
+    
+    const handleMouseEnter = () => {
+        setShowLongText(true);
+    };
+    
+    const handleMouseLeave = () => {
+        setShowLongText(false);
+    };
 
-    return <Card className="h-100" style={{backgroundColor: "#848a66"}}>
+    return <Card onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="h-100" style={{backgroundColor: "#848a66"}}>
         <Card.Header className="">
         <small className="">Phase: {phase}</small>
         <small className="text-muted ms-3">{category}</small>
@@ -25,11 +35,13 @@ export function StratItem({name, price, phase, category, effectTime, targetOwn, 
       </Card.Header>
       <Card.Body className="">
         <div className="mt-auto mb-2">
-            {shortOrLong === false ? <Card.Text>{textShort}</Card.Text> : <Card.Text>{textLong}</Card.Text>}
+            {showLongText ? <Card.Text>{textLong}</Card.Text> : <Card.Text>{textShort}</Card.Text>}
         </div>
+        {/*
         <div className="mt-auto">
             {shortOrLong === false ? <Button variant="dark" className="w-100">Expand</Button> : <Button variant="secondary" className="w-100">Simplify</Button>}
-        </div>
+        </div> */}
+
       </Card.Body>
       <Card.Footer>
         <small className="">Until: {effectTime}</small>
