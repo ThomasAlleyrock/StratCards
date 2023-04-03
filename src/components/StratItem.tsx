@@ -16,9 +16,15 @@ type StratItemProps = {
 export function StratItem({name, price, phase, category, effectTime, targetOwn, targetEnemy, textShort, textLong}: StratItemProps) {
 
     const [showLongText, setShowLongText] = useState(false);
+
+    const [style, setStyle] = useState({
+        backgroundColor: "#848a66", 
+        height: "300px"
+    })
     
     const handleMouseEnter = () => {
         setShowLongText(true);
+        setStyle({ ...style, height: "auto"})
     };
     
     const handleMouseLeave = () => {
@@ -31,7 +37,7 @@ export function StratItem({name, price, phase, category, effectTime, targetOwn, 
         } 
     };
 
-    return <Card onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="h-100" style={{backgroundColor: "#848a66"}}>
+    return <Card onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={style}>
         <Card.Header className="">
         <small className="">Phase: {phase}</small>
         <small className="text-muted ms-3">{category}</small>
