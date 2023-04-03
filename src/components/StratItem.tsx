@@ -25,8 +25,12 @@ export function StratItem({name, price, phase, category, effectTime, targetOwn, 
         setShowLongText(false);
     };
 
-    const colorPicker = ["#848a66"]
-    
+    const colorPicker = () => {
+        if (category === "Command") {
+            
+        } 
+    };
+
     return <Card onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="h-100" style={{backgroundColor: "#848a66"}}>
         <Card.Header className="">
         <small className="">Phase: {phase}</small>
