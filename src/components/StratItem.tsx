@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button, Card } from "react-bootstrap"
 
 type StratItemProps = {
@@ -18,8 +18,9 @@ export function StratItem({name, price, phase, category, effectTime, targetOwn, 
     const [showLongText, setShowLongText] = useState(false);
 
     const [style, setStyle] = useState({
-        backgroundColor: "#848a66", 
-        height: "300px"
+        backgroundColor: "#9c9d97", 
+        height: "300px",
+        color: "#636268"
     })
     
     const handleMouseEnter = () => {
@@ -29,13 +30,33 @@ export function StratItem({name, price, phase, category, effectTime, targetOwn, 
     
     const handleMouseLeave = () => {
         setShowLongText(false);
+        setStyle({ ...style, height: "300px"})
     };
 
-    const colorPicker = () => {
-        if (category === "Command") {
-            
-        } 
-    };
+    useEffect(() => {
+        const colorPicker = () => {
+            if (phase === "Before Battle") {
+                setStyle({ ...style, backgroundColor: "#9c9d97", color: "#46454c"})
+            } else if ( phase === "Any") {
+                setStyle({ ...style, backgroundColor: "#455b55", color: "#baa4aa"})
+            } else if ( phase === "Command") {
+                setStyle({ ...style, backgroundColor: "#5b6c3e", color: "#a493c1"})
+            } else if ( phase === "Movement") {
+                setStyle({ ...style, backgroundColor: "#526238", color: "#ad9dc7"})
+            } else if ( phase === "Psychic") {
+                setStyle({ ...style, backgroundColor: "#414d2c", color: "#beb2d3"})
+            } else if ( phase === "Shooting" || phase === "Shooting / Fight") {
+                setStyle({ ...style, backgroundColor: "#384326", color: "#c7bcd9"})
+            } else if ( phase === "Charge") {
+                setStyle({ ...style, backgroundColor: "#2b331d", color: "#d4cce2"})
+            } else if ( phase === "Fight") {
+                setStyle({ ...style, backgroundColor: "#1e2414", color: "#e1dbeb"})
+            } else if ( phase === "Morale") {
+                setStyle({ ...style, backgroundColor: "#11140b", color: "#eeebf4"})
+            }
+        };
+        colorPicker();
+    }, [phase]);
 
     return <Card onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={style}>
         <Card.Header className="">
@@ -44,8 +65,8 @@ export function StratItem({name, price, phase, category, effectTime, targetOwn, 
         <Card.Title className="fs-2">{name}</Card.Title>
         <Card.Subtitle className="mb-2">{price}</Card.Subtitle>
       </Card.Header>
-      <Card.Body className="">
-        <div className="mt-auto mb-2">
+      <Card.Body className="d-flex justify-content-start align-items-center">
+        <div className="">
             {showLongText ? <Card.Text>{textLong}</Card.Text> : <Card.Text>{textShort}</Card.Text>}
         </div>
         {/*
