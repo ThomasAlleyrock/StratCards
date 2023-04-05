@@ -12,13 +12,19 @@ export function DeathGuard() {
         "Before battle": 1,
         "Any": 2,
         "Command": 3,
-        "Movement": 4,
-        "Psychic": 5,
-        "Shooting": 6,
-        "Shooting / Fight": 7,
-        "Charge": 8,
-        "Fight": 9,
-        "Morale": 10
+        "Enemy Command": 4,
+        "Movement": 5,
+        "Enemy Movement": 6,
+        "Psychic": 7,
+        "Enemy Psychic": 8,
+        "Shooting": 9,
+        "Enemy Shooting": 10,
+        "Shooting / Fight": 11,
+        "Charge": 12,
+        "Enemy Charge": 13,
+        "Fight": 14,
+        "Morale": 15,
+        "Enemy Morale": 16
     };
     
     const sortedDGstrats = DGstrats.sort((a, b) => {

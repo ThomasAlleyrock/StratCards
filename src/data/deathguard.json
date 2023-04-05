@@ -112,7 +112,7 @@
     {
       "name": "ERUPTION OF FILTH",
       "price": "1 CP",
-      "phase": "When a DG Character is destroyed",
+      "phase": "Any",
       "category": "Epic Deed",
       "effectTime": "-",
       "targetOwn": "DG Character",
