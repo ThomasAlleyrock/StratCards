@@ -33,6 +33,16 @@ export function StratItem({name, price, phase, category, effectTime, targetOwn, 
         setStyle({ ...style, height: "300px"})
     };
 
+    const handleMouseClick = () => {
+        if (showLongText === false) {
+            setShowLongText(true)
+            setStyle({ ...style, height: "auto"})
+        } else if (showLongText === true) {
+            setShowLongText(false)
+            setStyle({ ...style, height: "300px"})
+        }
+    }
+
     useEffect(() => {
         const colorPicker = () => {
             if (phase === "Before Battle") {
@@ -58,7 +68,8 @@ export function StratItem({name, price, phase, category, effectTime, targetOwn, 
         colorPicker();
     }, [phase]);
 
-    return <Card onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={style}>
+    {/* onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} */}
+    return <Card onClick={handleMouseClick} style={style}>
         <Card.Header className="">
         <small className="">Phase: {phase}</small>
         <small className="text-muted ms-3">{category}</small>

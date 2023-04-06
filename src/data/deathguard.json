@@ -30,7 +30,7 @@
       "targetOwn": "DG Helbrute",
       "targetEnemy": "Can only attack one enemy unit",
       "textShort": "+1 to hit & +1 to wound",
-      "textLong": "Use this Stratagem in your Shooting phase, when a DEATH GUARD TERMINATOR unit from your army is selected to shoot, or in the Fight phase, when a DEATH GUARD TERMINATOR unit from your army is selected to fight. Until the end of the phase, each time a model in that unit makes an attack, add 1 to that attack's hit roll."
+      "textLong": "Use this Stratagem in your Shooting phase, when a DEATH GUARD HELBRUTE model from your army is selected to shoot. Until the end of the phase, that model can only target a single eligible enemy unit and each time an attack is made by that model, add 1 to that attacks hit roll and add 1 to that attack's wound roll."
     },
     {
       "name": "VERMID WHISPERS",
@@ -189,13 +189,13 @@
     {
       "name": "BELCHING FUMES",
       "price": "1 CP / 2 CP",
-      "phase": "Shooting",
+      "phase": "Enemy Shooting",
       "category": "Strategic Ploy",
       "effectTime": "End of the phase",
       "targetOwn": "Myphitic Blight-Hauler",
       "targetEnemy": "-",
       "textShort": "-1 attacks when targeted (min 1)",
-      "textLong": "Use this Stratagem at the start of your opponent’s Shooting phase. Select one MYPHITIC BLIGHT-HAULERS unit from your army. Until the end of the phase, each time an enemy model makes an attack with a ranged weapon against that unit, reduce the number of attacks made with that weapon by 1 (to a minimum of 1). If that unit contains 2 or fewer models, this Stratagem costs 1CP; otherwise, it costs 2CP."
+      "textLong": "Use this Stratagem at the start of your opponent's Shooting phase. Select one MYPHITIC BLIGHT-HAULERS unit from your army. Until the end of the phase, each time an enemy model makes an attack with a ranged weapon against that unit, reduce the number of attacks made with that weapon by 1 (to a minimum of 1). If that unit contains 2 or fewer models, this Stratagem costs 1CP; otherwise, it costs 2CP."
     },
     {
       "name": "BLIGHT BOMBARDMENT",
