@@ -47,21 +47,23 @@ export function StratItem({name, price, phase, category, effectTime, targetOwn, 
         const colorPicker = () => {
             if (phase === "Before Battle") {
                 setStyle({ ...style, backgroundColor: "#9c9d97", color: "#46454c"})
+            } else if ( phase === "Deployment") {
+                setStyle({ ...style, backgroundColor: "#455b55", color: "#baa4aa"})
             } else if ( phase === "Any") {
                 setStyle({ ...style, backgroundColor: "#455b55", color: "#baa4aa"})
-            } else if ( phase === "Command") {
+            } else if ( phase === "Command" || phase === "Enemy Command") {
                 setStyle({ ...style, backgroundColor: "#5b6c3e", color: "#a493c1"})
-            } else if ( phase === "Movement") {
+            } else if ( phase === "Movement" || phase === "Enemy Movement") {
                 setStyle({ ...style, backgroundColor: "#526238", color: "#ad9dc7"})
-            } else if ( phase === "Psychic") {
+            } else if ( phase === "Psychic" || phase === "Enemy Psychic") {
                 setStyle({ ...style, backgroundColor: "#414d2c", color: "#beb2d3"})
-            } else if ( phase === "Shooting" || phase === "Shooting / Fight") {
+            } else if ( phase === "Shooting" || phase === "Shooting / Fight" || phase === "Enemy Shooting") {
                 setStyle({ ...style, backgroundColor: "#384326", color: "#c7bcd9"})
-            } else if ( phase === "Charge") {
+            } else if ( phase === "Charge" || phase === "Enemy Charge") {
                 setStyle({ ...style, backgroundColor: "#2b331d", color: "#d4cce2"})
             } else if ( phase === "Fight") {
                 setStyle({ ...style, backgroundColor: "#1e2414", color: "#e1dbeb"})
-            } else if ( phase === "Morale") {
+            } else if ( phase === "Morale" || phase === "Enemy Morale") {
                 setStyle({ ...style, backgroundColor: "#11140b", color: "#eeebf4"})
             }
         };

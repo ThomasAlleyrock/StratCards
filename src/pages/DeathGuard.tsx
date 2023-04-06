@@ -10,21 +10,22 @@ export function DeathGuard() {
 
   const phaseOrder: PhasesOrder = {
       "Before battle": 1,
-      "Any": 2,
-      "Command": 3,
-      "Enemy Command": 4,
-      "Movement": 5,
-      "Enemy Movement": 6,
-      "Psychic": 7,
-      "Enemy Psychic": 8,
-      "Shooting": 9,
-      "Enemy Shooting": 10,
-      "Shooting / Fight": 11,
-      "Charge": 12,
-      "Enemy Charge": 13,
-      "Fight": 14,
-      "Morale": 15,
-      "Enemy Morale": 16
+      "Deployment": 2,
+      "Any": 3,
+      "Command": 4,
+      "Enemy Command": 5,
+      "Movement": 6,
+      "Enemy Movement": 7,
+      "Psychic": 8,
+      "Enemy Psychic": 9,
+      "Shooting": 10,
+      "Enemy Shooting": 11,
+      "Shooting / Fight": 12,
+      "Charge": 13,
+      "Enemy Charge": 14,
+      "Fight": 15,
+      "Morale": 16,
+      "Enemy Morale": 17
   };
   
   const sortedDGstrats = DGstrats.sort((a, b) => {
